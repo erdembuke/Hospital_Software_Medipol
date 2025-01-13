@@ -7,7 +7,7 @@ public class SingletonManager {
         System.out.println("SingletonManager oluşturuldu.");
     }
 
-    public static SingletonManager getInstance() {
+    public static synchronized SingletonManager getInstance() {
         if (instance == null) {
             instance = new SingletonManager();
         }
